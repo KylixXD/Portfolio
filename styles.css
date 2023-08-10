@@ -39,16 +39,22 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/*  NAVBAR */
-header a {
+/* Gerais */
+
+h1 {
+    font-size: 36px;
+}
+
+a {
     text-decoration:  none;
 }
 
+/*  NAVBAR */
 .nav-bar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3498db; /* Cor de fundo */
+    background-color: #5ccb5f; /* Cor de fundo */
     padding: 10px 20px; /* Espaçamento interno */
 }
 
@@ -92,3 +98,159 @@ header a {
 
 /* main */
 /* Sobre Mim */
+.summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.summary-left {
+    margin-right: 20px;
+}
+
+.imagem-perfil {
+    max-width: 300px;
+    height: auto;
+}
+
+.summary-right {
+    text-align: left;
+}
+
+.summary-right h1 {
+    font-size: 36px;
+}
+
+.summary-right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button-container button {
+    border: none;
+    background-color: transparent; /* Cor de fundo */
+    padding: 3px 8px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.button-container button:hover {
+    background-color: #5ccb5f;
+}
+
+.button-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.button-container img {
+    width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 20px;
+}
+/* Sobre mim */
+.about-box, .skill-box{
+    background-color: #5ccb5f;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Habilidades */
+
+.Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.skills-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.images-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.images-skills img {
+    width: 150px; /* Tamanho dos ícones */
+    height: 150px;
+}
+
+/* Contato */
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-container button{
+    padding: 10px;
+    background-color: #5ccb5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #39703b;
+}
