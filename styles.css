@@ -1,0 +1,94 @@
+/* Meyer Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*  NAVBAR */
+header a {
+    text-decoration:  none;
+}
+
+.nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+#portfolio-tittle {
+    display: flex;
+    align-items: center;
+}
+
+#tired-dev {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center; /* Alinhar verticalmente ao centro */
+}
+
+#logo {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px;
+}
+
+.option-nav-bar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.option-nav-bar li {
+    margin-right: 20px; /* Espaçamento entre as opções */
+}
+
+.option-nav-bar li:last-child {
+    margin-right: 0; /* Remover espaçamento à direita da última opção */
+}
+
+.option-nav-bar a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* main */
+/* Sobre Mim */
