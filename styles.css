@@ -40,9 +40,13 @@ table {
     border-spacing: 0;
 }
 /* Gerais */
+* {
+    font-family: 'Nunito', sans-serif;
+}
 
 h1 {
     font-size: 36px;
+    font-weight: bold;
 }
 
 a {
