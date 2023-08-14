@@ -41,6 +41,10 @@ table {
 }
 /* Gerais */
 
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 h1 {
     font-size: 36px;
 }
@@ -54,7 +58,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5ccb5f; /* Cor de fundo */
+    background-color: #5ccb5f; 
     padding: 10px 20px; /* Espaçamento interno */
 }
 
@@ -102,7 +106,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .summary-left {
@@ -116,6 +120,7 @@ a {
 
 .summary-right {
     text-align: left;
+    max-width: 600px;
 }
 
 .summary-right h1 {
@@ -129,6 +134,7 @@ a {
 
 .button-container {
     display: flex;
+    margin-top: 10px;
     gap: 10px;
 }
 
@@ -143,7 +149,7 @@ a {
 }
 
 .button-container button:hover {
-    background-color: #5ccb5f;
+    background-color: #a9dbb8;
 }
 
 .button-container a {
@@ -158,13 +164,15 @@ a {
     width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
     height: 20px;
 }
+
 /* Sobre mim */
-.about-box, .skill-box{
+
+.about-box{
     background-color: #5ccb5f;
     color: #fff;
     padding: 20px;
+    margin: 20px 70px;
     border-radius: 10px;
-    margin-top: 20px;
     font-size: 1.1rem;
 }
 
@@ -198,10 +206,39 @@ a {
     height: 150px;
 }
 
+/* Projetos fodas */
+
+.projetos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #5ccb5f;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 70px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.projeto-indi{
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.projeto-indi img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
 /* Contato */
 
 .form-container {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
     background-color: #ccc;
@@ -220,6 +257,8 @@ form {
 }
 
 .input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
@@ -253,4 +292,13 @@ textarea {
 
 .form-container button:hover {
     background-color: #39703b;
+}
+
+/* Footer */
+
+.copyright-site {
+    background-color: #5ccb5f;
+    padding: 10px 0;
+    margin-top: 10px;
+    text-align: center;
 }
