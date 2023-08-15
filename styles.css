@@ -53,13 +53,18 @@ a {
     text-decoration:  none;
 }
 
+main {
+    padding: 0 25px;
+}
+
+
 /*  NAVBAR */
 .nav-bar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #5ccb5f; 
-    padding: 10px 20px; /* Espaçamento interno */
+    padding: 10px 20px; 
 }
 
 #portfolio-tittle {
@@ -107,6 +112,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    user-select: none;
 }
 
 .summary-left {
@@ -116,6 +122,7 @@ a {
 .imagem-perfil {
     max-width: 300px;
     height: auto;
+    user-select: none;
 }
 
 .summary-right {
@@ -132,7 +139,7 @@ a {
     margin-bottom: 20px;
 }
 
-.button-container {
+.button-container{
     display: flex;
     margin-top: 10px;
     gap: 10px;
@@ -158,6 +165,7 @@ a {
     text-decoration: none;
     color: black; /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
+    gap: 5px;
 }
 
 .button-container img {
@@ -238,7 +246,7 @@ a {
 /* Contato */
 
 .form-container {
-    max-width: 1200px;
+    max-width:80%;
     margin: 0 auto;
     padding: 40px;
     background-color: #ccc;
@@ -267,8 +275,7 @@ label {
     margin-bottom: 8px;
 }
 
-input,
-textarea {
+input,textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -299,6 +306,36 @@ textarea {
 .copyright-site {
     background-color: #5ccb5f;
     padding: 10px 0;
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
 }
+
+/* Dark Mode */
+#dark-mode-toggle {
+    margin-right: 10px;
+}
+
+.darkmode-button {
+    border: none; 
+    background-color: transparent; 
+    padding: 3px 8px; 
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    /* position: absolute;
+    top: 60px; 
+    right: 20px; */
+}
+
+.darkmode-button img {
+    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 50px;
+}
+
+.dark-mode body {
+    background-color: #333333;
+    color: blue;
+  }
+
+
