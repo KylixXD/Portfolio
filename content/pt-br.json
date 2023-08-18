@@ -1,0 +1,11 @@
+{
+    "header": {
+        "logo": "Dev cansado",
+        "menu":["Início", "Sobre", "Habilidades", "Projetos", "Contato"]
+    },
+    "inicio": {},
+    "sobre": {},
+    "habilidades": {},
+    "projetos": {},
+    "contato": {}
+}
