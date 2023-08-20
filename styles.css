@@ -62,12 +62,22 @@ main {
 }
 
 
+
+:root {
+    --background-color: #c7f9cc;
+    --text-color: #000;
+    --botao-cor: #1a1a1a;
+    --verde-claro:#80ed99;
+    --verde-hover: #57cc99;
+}
+
+
 /*  NAVBAR */
 .nav-bar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5ccb5f; 
+    background-color: var(--verde-claro); 
     padding: 10px 20px; 
 }
 
@@ -77,7 +87,7 @@ main {
 }
 
 #tired-dev {
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 16px;
     align-self: center; /* Alinhar verticalmente ao centro */
@@ -104,12 +114,106 @@ main {
 }
 
 .option-nav-bar a {
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
+}
+/* mode option container */
+.mode-options {
+    display: flex;
+    align-items: center; 
+}
+/* Language */
+
+.language-toggle {
+    position: relative;
+    width: 35px;
+    font-weight: bold;
 }
 
+.language-toggle ul {
+    position: absolute;
+    width: 140px;
+    background-color: #FFF;
+    border: 1px solid #f8f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0 1 10 rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.language-toggle ul li {
+    list-style: none;
+}
+
+.language-toggle ul li a {
+    display: block;
+    color: #252525;
+    padding-top: 5px 10px;
+}
+
+.language-toggle ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.language-toggle:hover ul {
+    display: block;
+}
+
+.choose_language {
+    width: 35px;
+}
+
+.language-selected {
+    display: flex;
+    cursor: pointer;
+    width: 5px;
+}
+
+
+.brazil-flag{   
+    width: 40px; 
+}
+
+.usa-flag{
+    width: 35px;
+}
+
+/* Dark Mode */
+#dark-mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.darkmode-button {
+    border: none; 
+    background-color: transparent; 
+    padding: 3px 8px; 
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.darkmode-button img {
+    width: 50px; 
+    height: 50px;
+}
+
+.nav-bar-container-darkmode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #013603; 
+    padding: 10px 20px; 
+}
+
+
 /* main */
+.fundo-pag {
+    background-color: var(--background-color);
+}
+
 /* Sobre Mim */
 .summary {
     display: flex;
@@ -130,6 +234,7 @@ main {
 }
 
 .summary-right {
+    color: var(--text-color);
     text-align: left;
     max-width: 600px;
 }
@@ -160,14 +265,14 @@ main {
 }
 
 .button-container button:hover {
-    background-color: #a9dbb8;
+    background-color: var(--verde-hover);
 }
 
 .button-container a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black; /* Cor do texto */
+    color: var(--text-color); /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
     gap: 5px;
 }
@@ -180,12 +285,17 @@ main {
 /* Sobre mim */
 
 .about-box{
-    background-color: #5ccb5f;
-    color: #fff;
+    background-color: var(--verde-claro);
+    color: var(--text-color);
+    text-justify: center;
     padding: 20px;
     margin: 20px 70px;
     border-radius: 10px;
     font-size: 1.1rem;
+}
+
+#sobre {
+    color: var(--text-color);
 }
 
 /* Habilidades */
@@ -197,8 +307,16 @@ main {
     padding: 40px;
 }
 
+.skills-box {
+    background-color: var(--verde-claro);
+    padding: 20px;
+    margin: 20px 70px;
+    border-radius: 10px;
+}
+
 .skills-container {
     text-align: center;
+    color: var(--text-color);
 }
 
 .skills-container h1 {
@@ -220,12 +338,16 @@ main {
 
 /* Projetos fodas */
 
+#projetos {
+    color: var(--text-color);
+}
+
 .projetos-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #5ccb5f;
-    color: #fff;
+    background-color: var(--verde-claro);
+    color: var(--text-color);
     padding: 20px;
     margin: 20px 70px;
     border-radius: 10px;
@@ -292,8 +414,8 @@ textarea {
 
 .form-container button{
     padding: 10px;
-    background-color: #5ccb5f;
-    color: #fff;
+    background-color: var(--verde-claro);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -302,47 +424,23 @@ textarea {
 }
 
 .form-container button:hover {
-    background-color: #39703b;
+    background-color: var(--verde-hover);
 }
 
 /* Footer */
 
 .copyright-site {
-    background-color: #5ccb5f;
-    padding: 10px 0;
-    margin-top: 30px;
+    background-color: var(--verde-claro);
+    padding: 10px 0 ;
     text-align: center;
+    margin-top: 30px;
 }
 
-/* Dark Mode */
-#dark-mode-toggle {
-    margin-right: 10px;
+html {
+    background-color: var(--background-color);
 }
 
-.darkmode-button {
-    border: none; 
-    background-color: transparent; 
-    padding: 3px 8px; 
-    border-radius: 10px;
-    cursor: pointer;
-    float: right;
-    margin-right: 20px;
-    /* position: absolute;
-    top: 60px; 
-    right: 20px; */
-}
-
-.darkmode-button img {
-    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 50px;
-}
-
-.dark-mode body {
-    background-color: #333333;
-    color: blue;
-  }
-
-  /* Thanks page */
+/* Thanks page */
 
   .thanks {
     display: flex;

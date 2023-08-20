@@ -12,7 +12,7 @@
 <body>
     <!--------------------------------------- Header --------------------------------------->
     <header>
-        <div id="nav-bar" class="nav-bar-container">
+        <section id="nav-bar" class="nav-bar-container">
             <a href="/" id="inicio">
                 <span id="portfolio-tittle">
                     <span id="tired-dev">Tired Dev</span>
@@ -20,27 +20,39 @@
                 </span>
             </a>
             <ul class="option-nav-bar">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#inicio" id="Inicio">Inicio</a></li>
+                <li><a href="#sobre" id="Sobre">Sobre</a></li>
+                <li><a href="#habilidades" id="Habilidades">Habilidades</a></li>
+                <li><a href="#projetos" id="Projetos">Projetos</a></li>
+                <li><a href="#contato" id="Contato">Contato</a></li>
             </ul>
-        </div>
-        <div id="dark-mode-toggle ">
-            <button class="darkmode-button"><img src="imgs/dark-mode.png" alt=""></button>
-        </div>
+            <div class="mode-options">
+                <div class="language-toggle">
+                    <div class="language-selected">
+                        <img src="imgs/choose_language.png" alt="" class="choose_language">
+                    </div>
+                    <ul>
+                        <li><a href="#" class="br"><img src="imgs/brazil_flag.png" class="brazil-flag" alt="">Português</a></li>
+                        <li><a href="#" class="en"><img src="imgs/usa_flag.png" class="usa-flag" alt="">English</a></li>
+                    </ul>
+                </div>
+                <div id="dark-mode-toggle">
+                    <button class="darkmode-button"><img src="imgs/dark-mode.png" alt=""></button>
+                </div>
+            </div>
+        </section>
+        
     </header>
-    <main>
+    <main class="fundo-pag">
         <!--------------------------------------- Resumo --------------------------------------->
-        <div class="summary" id="inicio">
+        <section class="summary" id="inicio">
             <div class="summary-left">
                 <img src="imgs/Rafael.png" alt="" class="imagem-perfil" draggable="false">
             </div>
             <div class="summary-right">
-                <span>Oi,me chamo</span>
+                <span id="saudacoes">Oi,me chamo</span>
                 <h1>Rafael Nóbrega</h1>
-                <span>e tenho muito o que aprender nesse mundo gigantesco chamado Programação.</span>
+                <span id="resumo">e tenho muito o que aprender nesse mundo gigantesco chamado Programação.</span>
                 <div class="button-container">
                     <button type="button">
                         <a href="https://github.com/KylixXD">GitHub<img src="imgs/github.png" alt="Icone do GitHub"></a>
@@ -53,65 +65,69 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
         <!--------------------------------------- sobre Mim --------------------------------------->
-        <div id="sobre">
-            <h1>Sobre Mim</h1>
+        <section id="sobre">
+            <h1 id="Sobre_mim">Sobre Mim</h1>
             <div class="about-box">
                 <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto molestiae asperiores eligendi molestias repellendus aperiam, modi mollitia voluptate minus iste, quia aliquid dolorem accusantium quod dolor, laboriosam porro. Suscipit, debitis quisquam! Vero tenetur ad quasi dolores totam aliquid facere error autem. Fuga quod cumque doloribus quos aspernatur at labore modi optio tempore! Repellendus vel eos illo, veniam laudantium, est pariatur iusto commodi expedita eum ipsum quo nam minima. Dicta quaerat magnam deserunt in aliquam, minus quia placeat animi delectus odit laborum, praesentium impedit ducimus necessitatibus provident eligendi sunt itaque expedita commodi eos accusantium et. Molestias porro impedit facere quos, ab voluptate aliquam quo ad deleniti labore est eius voluptas laborum similique itaque cumque accusantium, a nulla voluptatem totam tenetur. Cum quia distinctio, modi voluptate enim nulla voluptatem quam aliquam? Corrupti, cupiditate unde. Hic sapiente corrupti placeat atque, quod odio fugiat, doloribus at facere maxime eaque harum praesentium consequatur. Architecto nemo voluptatem vel dolorem at aliquid suscipit accusamus. Neque itaque molestias pariatur doloribus dicta facere adipisci magnam consectetur dignissimos. Tempora adipisci in, voluptas placeat non assumenda accusamus. Possimus dolore dolor quasi aperiam tempore quaerat omnis, in neque debitis non minima mollitia consequuntur rem error, nisi hic magni accusantium corrupti molestiae sed recusandae perferendis eum. Perspiciatis quisquam, repellat, eius minus vero dolores iure accusantium quod voluptatum temporibus vel quibusdam quaerat? Voluptates reiciendis praesentium magni eligendi cumque sit molestias nesciunt soluta. Porro iure harum quae cum, ullam exercitationem temporibus molestias voluptatibus, dolor nostrum reiciendis maxime accusamus? Architecto porro repellat, ue doloribus mollitia optio! Illum, magnam sunt rem blanditiis voluptatum dolorum velit ducimus quisquam adipisci error, nam eveniet at iusto obcaecati quidem a consectetur ipsum non nulla! Eligendi vel cupiditate laborum praesentium magni! Aliquid autem temporibus laudantium? Distinctio obcaecati veritatis animi. Placeat nesciunt omnis labore ipsam? Perspiciatis.</span>
             </div>
-        </div>
+        </section>
         <!--------------------------------------- Skills --------------------------------------->
-        <div class="Skills" id="habilidades">
+        <section class="Skills" id="habilidades">
             <div class="skills-container">
-                <h1>Estou aprendendo estas tecnologias</h1>
-                <div class="images-skills" id="skills">
-                    <img src="imgs/html-5.png" alt="">
-                    <img src="imgs/css-3.png" alt="">
-                    <img src="imgs/js.png" alt="">
-                    <img src="imgs/php.png" alt="">
-                    <img src="imgs/python.png" alt="">
-                    <img src="imgs/docker.png" alt="">
-                    <img src="imgs/git.png" alt="">
-                </div>               
+                <h1 id="estudos">Estou aprendendo estas tecnologias</h1>
+                <div class="skills-box">
+                    <div class="images-skills">
+                        <img src="imgs/html-5.png" alt="">
+                        <img src="imgs/css-3.png" alt="">
+                        <img src="imgs/js.png" alt="">
+                        <img src="imgs/php.png" alt="">
+                        <img src="imgs/python.png" alt="">
+                        <img src="imgs/docker.png" alt="">
+                        <img src="imgs/git.png" alt="">
+                    </div>    
+                </div>            
             </div>
-        </div>
+        </section>
         <!--------------------------------------- Projetos --------------------------------------->
-        <h1>Projetos Fodas</h1>
-        <div class="projetos-container" id="projetos">
-            <div class="projeto-indi">
-                <img src="imgs/urubudopix.jpg" alt="">
-                <h3>projeto 1</h3>
+        <section id="projetos">
+            <h1 id="projetos_fodas">Projetos Fodas</h1>
+            <div class="projetos-container" >
+                <div class="projeto-indi">
+                    <img src="imgs/trabalho-em-progresso.png" alt="">
+                    <h3 id="projeto_1">projeto 1</h3>
+                </div>
+                <div class="projeto-indi">
+                    <img src="imgs/trabalho-em-progresso.png" alt="">
+                    <h3 id="projeto_2">projeto 2</h3>
+                </div>
+                <div class="projeto-indi">
+                    <img src="imgs/trabalho-em-progresso.png" alt="">
+                    <h3 id="projeto_3">projeto 3</h3>
+                </div>
+                <div class="projeto-indi">
+                    <img src="imgs/trabalho-em-progresso.png" alt="">
+                    <h3 id="projeto_4">projeto 4</h3>
+                </div>
+                <div class="projeto-indi">
+                    <img src="imgs/trabalho-em-progresso.png" alt="">
+                    <h3 id="projeto_5">projeto 5</h3>
+                </div>
+                <div class="projeto-indi">
+                    <img src="imgs/trabalho-em-progresso.png" alt="">
+                    <h3 id="projeto_6">projeto 6</h3>
+                </div>
             </div>
-            <div class="projeto-indi">
-                <img src="imgs/urubudopix.jpg" alt="">
-                <h3>projeto 2</h3>
-            </div>
-            <div class="projeto-indi">
-                <img src="imgs/urubudopix.jpg" alt="">
-                <h3>projeto 3</h3>
-            </div>
-            <div class="projeto-indi">
-                <img src="imgs/urubudopix.jpg" alt="">
-                <h3>projeto 4</h3>
-            </div>
-            <div class="projeto-indi">
-                <img src="imgs/urubudopix.jpg" alt="">
-                <h3>projeto 5</h3>
-            </div>
-            <div class="projeto-indi">
-                <img src="imgs/urubudopix.jpg" alt="">
-                <h3>projeto 6</h3>
-            </div>
-        </div>
+        </section>
         <!--------------------------------------- contato --------------------------------------->
-        <div id="contato">
+        <section id="contato">
             <div class="form-container" >
-                <h1>Formulário para contato</h1>
+                <h1 id="Formulario">Formulário para contato</h1>
                 <form action="https://formsubmit.co/rafaelnobregati@gmail.com" method="POST">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
                     <div class="input-group">
-                        <label for="name">Nome:</label>
+                        <label for="name" id="nome-form">Nome:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="input-group">
@@ -119,18 +135,18 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="input-group">
-                        <label for="email">Assunto:</label>
+                        <label for="email"  id="assunto-form">Assunto:</label>
                         <input type="text" id="assunto" name="assunto" required>
                     </div>
                     <div class="input-group">
-                        <label for="message">Sua mensagem:</label>
+                        <label for="message"  id="mensagem-form">Sua mensagem:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit"  id="enviar-form"><strong>Enviar</strong></button>
                     
                 </form>
             </div>
-        </div>
+        </section>
         
     </main>
     <!--------------------------------------- Footer --------------------------------------->
@@ -139,7 +155,7 @@
             <p>&copy; 2023 Kylix</p>
         </div>       
     </footer>
-    <script src="js/index.js"></script>
-    <script src="js/load_content.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 </html>
