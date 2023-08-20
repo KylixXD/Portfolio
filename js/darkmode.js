@@ -5,14 +5,16 @@ const lightTheme = {
     "--background-color": "#c7f9cc",
     "--text-color": "#000",
     "--verde-claro": "#80ed99",
-    "--verde-hover": "#57cc99"
+    "--verde-hover": "#57cc99",
+    "--cor-botao": "#43b45d"
 }
 
 const darkTheme = {
     "--background-color": "#588157",
     "--text-color": "#fff",
-    "--verde-claro": "#344e41",
-    "--verde-hover": "#c7f9cc"
+    "--verde-claro": "#3f7e5e",
+    "--verde-hover": "#c7f9cc",
+    "--cor-botao": "#6a994e"
 }
 
 let currentTheme = lightTheme; 

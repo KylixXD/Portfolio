@@ -69,6 +69,7 @@ main {
     --botao-cor: #1a1a1a;
     --verde-claro:#80ed99;
     --verde-hover: #57cc99;
+    --cor-botao: #43b45d;
 }
 
 
@@ -308,10 +309,12 @@ main {
 }
 
 .skills-box {
+    display: flex;
     background-color: var(--verde-claro);
     padding: 20px;
     margin: 20px 70px;
     border-radius: 10px;
+    
 }
 
 .skills-container {
@@ -375,7 +378,7 @@ main {
     max-width:80%;
     margin: 0 auto;
     padding: 40px;
-    background-color: #ccc;
+    background-color: var(--verde-claro);
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -383,11 +386,13 @@ main {
 .form-container h1{
     font-size: 24px;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 form {
     display: flex;
     flex-direction: column;
+    color: var(--text-color);
 }
 
 .input-group {
@@ -414,7 +419,7 @@ textarea {
 
 .form-container button{
     padding: 10px;
-    background-color: var(--verde-claro);
+    background-color: var(--cor-botao);
     color: var(--text-color);
     border: none;
     border-radius: 5px;
