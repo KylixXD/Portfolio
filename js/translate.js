@@ -21,7 +21,10 @@ const translations = {
         email: "Email:",
         'assunto-form': "Subject:",
         'mensagem-form': "Your message:",
-        'enviar-form': "Send"
+        'enviar-form': "Send",
+        email_enviado: "Email sent",
+        obrigado_envio: "Thank you for contacting us",
+        voltar_botao: "Back to Main Page"
     },
     pt: {
         Inicio: "Início",
@@ -45,7 +48,10 @@ const translations = {
         email: "E-mail:",
         'assunto-form': "Assunto:",
         'mensagem-form': "Sua mensagem:",
-        'enviar-form': "Enviar"
+        'enviar-form': "Enviar",
+        email_enviado: "Email enviado",
+        obrigado_envio: "Obrigado por entrar em contato",
+        voltar_botao: "Voltar para a Página Principal"
     }
 };
 

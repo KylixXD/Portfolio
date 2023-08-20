@@ -12,33 +12,37 @@
 <body>
     <!--------------------------------------- Header --------------------------------------->
     <header>
-        <div id="nav-bar" class="nav-bar-container">
+        <section id="nav-bar" class="nav-bar-container">
             <a href="/" id="inicio">
                 <span id="portfolio-tittle">
                     <span id="tired-dev">Tired Dev</span>
                     <img src="imgs/Logo.png" alt="logo" id="logo">
                 </span>
             </a>
-            <ul class="option-nav-bar">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-        <div id="dark-mode-toggle ">
-            <button class="darkmode-button"><img src="imgs/dark-mode.png" alt=""></button>
-        </div>
+            <div class="mode-options">
+                <div class="language-toggle">
+                    <div class="language-selected">
+                        <img src="imgs/choose_language.png" alt="" class="choose_language">
+                    </div>
+                    <ul>
+                        <li><a href="#" class="br"><img src="imgs/brazil_flag.png" class="brazil-flag" alt="">Português</a></li>
+                        <li><a href="#" class="en"><img src="imgs/usa_flag.png" class="usa-flag" alt="">English</a></li>
+                    </ul>
+                </div>
+                <div id="dark-mode-toggle">
+                    <button class="darkmode-button"><img src="imgs/dark-mode.png" alt=""></button>
+                </div>
+            </div>
+        </section>
+        
     </header>
-    <main>
-         <!--------------------------------------- main --------------------------------------->
-         <div class="thanks">
-            <h1>Email enviado</h1>
-            <h2>Obrigado por entrar em contato</h2>
+    <main >
+        <div class="thanks">
+            <h1 id="email_enviado">Email enviado</h1>
+            <h2 id="obrigado_envio">Obrigado por entrar em contato</h2>
             <img src="imgs/beleza.png" alt="">
-            <a href="/">Voltar página inicial</a>
-         </div> 
+            <a href="index.html" class="back-button" id="voltar_botao">Voltar para a Página Principal</a>
+         </div>      
     </main>
     <!--------------------------------------- Footer --------------------------------------->
     <footer>
@@ -46,6 +50,7 @@
             <p>&copy; 2023 Kylix</p>
         </div>       
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 </html>
