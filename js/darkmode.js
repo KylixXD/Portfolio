@@ -2,7 +2,7 @@ const darkModeButton = document.querySelector("#dark-mode-toggle");
 const rootElement = document.documentElement;
 
 const lightTheme = {
-    "--background-color": "#c7f9cc",
+    "--background-color": "#dee2e6",
     "--text-color": "#000",
     "--verde-claro": "#80ed99",
     "--verde-hover": "#57cc99",
@@ -10,7 +10,7 @@ const lightTheme = {
 }
 
 const darkTheme = {
-    "--background-color": "#588157",
+    "--background-color": "#343a40",
     "--text-color": "#fff",
     "--verde-claro": "#3f7e5e",
     "--verde-hover": "#c7f9cc",
